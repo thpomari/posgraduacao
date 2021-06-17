@@ -41,3 +41,6 @@ o algoritimo de gradiente descendente. O vetor gradiente é responsável por apo
 
 ![image](https://user-images.githubusercontent.com/22582744/122484542-30cc8880-cfab-11eb-9d06-c0780f6fba23.png)
 
+
+
+![image](https://user-images.githubusercontent.com/22582744/122485160-a08f4300-cfac-11eb-8113-07cd540db9ea.png)
