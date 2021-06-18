@@ -1,4 +1,4 @@
-## Rgressão linear simples
+## Regressão Linear Simples
 
 ### Definições
 Abordagem para modelar o relacionamento entre variáveis independentes explicativas e dependentes numéricas ajustando um modelo linear
@@ -44,3 +44,23 @@ o algoritimo de gradiente descendente. O vetor gradiente é responsável por apo
 
 
 ![image](https://user-images.githubusercontent.com/22582744/122485160-a08f4300-cfac-11eb-8113-07cd540db9ea.png)
+
+
+## Regressão Linear Múltipla
+
+### Definições
+
+![image](https://user-images.githubusercontent.com/22582744/122492080-80b34b80-cfbb-11eb-8c44-c51308e8e39c.png)
+
+![image](https://user-images.githubusercontent.com/22582744/122492111-8f016780-cfbb-11eb-9ec9-12b5d361811f.png)
+
+Variáveis independentes não podem ser altamente correlacionadas.
+
+Em casos de variáveis categóricas, como o Estado no exemplo, uma saída é transformar cada categoria em uma variável e seu valor como binário (dummy variables).
+![image](https://user-images.githubusercontent.com/22582744/122492227-c243f680-cfbb-11eb-9d6d-4f510fc301ed.png)
+
+Porém, justamente pelo fato de que as variáveis independentes não podem ter alta correlação, desse modo da imagem é possível criar uma fórmula que determina o valor de 
+uma coluna que representa uma categoria através das outras duas, isso é chamado de Dummy Variable Trap. A saída para esse problema pode ser a exclusão de uma das colunas categóricas.
+
+![image](https://user-images.githubusercontent.com/22582744/122492384-0afbaf80-cfbc-11eb-8310-c8024aa75b52.png)
+
