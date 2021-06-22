@@ -1,0 +1,66 @@
+## Regressão Linear Simples
+
+### Definições
+Abordagem para modelar o relacionamento entre variáveis independentes explicativas e dependentes numéricas ajustando um modelo linear
+
+Y = b0 + b1 * x
+
+**y** é uma variável dependente.
+**b0** é o intercepto em y, o valor do Y quando o x é 0, ou seja, a reta é paralela ao eixo x e seu angulo de inclinação é 0.
+**b1** é a inclinação da reta, ou seja, é o valor adicionado a y ao andar um ponto em x.
+**x** é a variavel independente.
+
+**Ex:** Em um gráfico onde o eixo X é a experiência em anos e o eixo y é o salário anual, o **y** seria o salário, o **b0** seria o salário quando uma
+pessoa tem 0 anos de experiência, o **b1** seria o valor que é adicionado ao salário a cada ano de experiência e o **x** seria a experiência em questão.
+
+![image](https://user-images.githubusercontent.com/22582744/122484294-b1d75000-cfaa-11eb-87b0-84dedea4077e.png)
+
+### Como escolher a melhor Reta?
+Dado um conjunto de dados, existem N combinações de retas (valores de b0 e b1) que o modelo pode adotar, porém como é possível saber a reta ideal?
+Essa conclusão pode ser feita através do cálculo dos erros das amostras em relação a sua predição. Esse valor pode ser medido através de uma função que busca os
+valores para b0 e b1 que minimizam ao máximo a função de custo para o conjunto de treinamento.
+![image](https://user-images.githubusercontent.com/22582744/122484395-e5b27580-cfaa-11eb-8d90-e1da5b423dd3.png)
+
+### Função de Custo (ou função de erro):
+
+**Mean Square Error (MSE)** 
+
+![image](https://user-images.githubusercontent.com/22582744/122484445-024ead80-cfab-11eb-9ee4-6eeafacfd6ce.png)
+
+Essa abordagem faz uma somatória da diferença do valor real da amostra de teste com o valor predito pela reta ao quadrado, para depois tirar média. 
+Porque elevar ao elevar ao quadrado? Pois isso ajuda a aumentar o peso de erros mais graves na hora de computar a média de todos os erros, dando um maior foco para 
+os valores mais distantes da reta
+
+Quando estamos escolhendo os valores de b0 adotando o b1 como 0, ou seja, ajustando a reta partindo do ponto 0 em x, podemos utilizar um gráfico bidmensional para 
+visualizar a parábola formada pelos valores descobertos pelo **MSE**. E o ideal é chegar o mais proximo do eixo X.
+![image](https://user-images.githubusercontent.com/22582744/122484507-1c888b80-cfab-11eb-8c97-0ecaab899e68.png)
+
+
+Caso estejamos variando os valores de b0 e b1, teremos um gráfico tri dimensional (parecido com uma rede) e o objetivo é chegar no ponto mínimo do gráfico, em que podemos utilizar
+o algoritimo de gradiente descendente. O vetor gradiente é responsável por apontar para a direção de maior crescimento da função, para um dado ponto da função, com uma dada taxa de crescimento.
+
+![image](https://user-images.githubusercontent.com/22582744/122484542-30cc8880-cfab-11eb-9d06-c0780f6fba23.png)
+
+
+
+![image](https://user-images.githubusercontent.com/22582744/122485160-a08f4300-cfac-11eb-8113-07cd540db9ea.png)
+
+
+## Regressão Linear Múltipla
+
+### Definições
+
+![image](https://user-images.githubusercontent.com/22582744/122492080-80b34b80-cfbb-11eb-8c44-c51308e8e39c.png)
+
+![image](https://user-images.githubusercontent.com/22582744/122492111-8f016780-cfbb-11eb-9ec9-12b5d361811f.png)
+
+Variáveis independentes não podem ser altamente correlacionadas.
+
+Em casos de variáveis categóricas, como o Estado no exemplo, uma saída é transformar cada categoria em uma variável e seu valor como binário (dummy variables).
+![image](https://user-images.githubusercontent.com/22582744/122492227-c243f680-cfbb-11eb-9d6d-4f510fc301ed.png)
+
+Porém, justamente pelo fato de que as variáveis independentes não podem ter alta correlação, desse modo da imagem é possível criar uma fórmula que determina o valor de 
+uma coluna que representa uma categoria através das outras duas, isso é chamado de Dummy Variable Trap. A saída para esse problema pode ser a exclusão de uma das colunas categóricas.
+
+![image](https://user-images.githubusercontent.com/22582744/122492384-0afbaf80-cfbc-11eb-8310-c8024aa75b52.png)
+
