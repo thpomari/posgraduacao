@@ -41,3 +41,9 @@
 » **Bernoulli Distribution** => Distribuição mais simples, apenas 2 outcomes (resultado), uma ensaio (tentativa).
 
 » **Binomial Distribution** => (discreta) frequencia de distribuição de uma quantidade de sucessos (x) em uma quantidade de tentativas com a probabilidade definida de sucesso em cada tentativa EX: obter 2 caras ao jogar 3 moedas. n de mulheres em uma familia.
+
+» **Poisson Distribution** => usada pra descrever um numero de ocorrências em um período ou espaço específico. A probabilidade de sucesso é a mesma para todas as partes do intervalo, um sucesso não deve influenciar no outro, a probabilidade de sucesso é a mesma em intervalos com mesmo tamanho, a probabilidade de sucesso em um intervalo se aproxima a zero ao diminuir o intervalo. Ex: Numero de ligações de emergência feitas para um hospital em um dia; Numero de suicídios reportados em determinada cidade; numero de erros de impressão em cada página de um livro.
+
+» **Uniform Distribution** => Discreta ou continua, a probabilidade de um evento é uniformemente distribuída, de modo que todas as chances são iguais. Ex: dado.
+
+» **Normal Distribution** => 
