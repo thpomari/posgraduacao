@@ -47,3 +47,24 @@
 » **Uniform Distribution** => Discreta ou continua, a probabilidade de um evento é uniformemente distribuída, de modo que todas as chances são iguais. Ex: dado.
 
 » **Normal Distribution** => 
+
+
+### Estimation
+
+» **Estimativas** => o processo de usar uma amostra para fazer inferências sobre a população é chamada de inferência estatistica. Existem 2 tipos: estimativas pontuais e estimativas intervalar.
+
+» **Estimativa pontual** =>  é uma estimativa de um único valor para um parâmetro populacional, não é possível afirmar qualidade ou precisão. Ex: pegar uma amostra das pessoas de uma determinada cidade e calcular a média de altura delas e dizer baseado nisso que a altura média da cidade é de 1.75m.
+
+» **Estimativa intervalar** => ou intervalo de confiança, passa um certo grau de confiança que o intervalo contém do parametro da população estimado. Ex: dizer que a estimativa média de altura da população de uma cidade tem 95% de chance de estar entre 1.6 e 1.8m.
+
+» **Distribuição Amostral Estatística** => computando uma média, por exemplo, por um número K de vezes para um determinado grupo amostral de N amostras.
+
+» **Teorema do limite central** => quanto maior o número de amostras a média das distribuições amostrais se aproxima de uma distribuição normal, independente de qual era a distribuição da população. A média da distribuição amostral tende a distribuição normal quando o N for >= 30.
+
+» **Intervalo de Confiança** => 
+
+» **Nivel de Significância** => 
+
+» **Resampling** => 
+
+» **Bootstrap** => 
